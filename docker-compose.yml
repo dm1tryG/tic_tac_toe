@@ -1,0 +1,14 @@
+services:
+  api:
+    build: .
+    container_name: tic_tac_toe_api
+    command: python main.py
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./src:/app
+      - ./tests:/app/tests
+  random_api:
+    image: maguirebrendan/random:latest
+    ports:
+      - "4001:5000"

@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "tictactoe"
+version = "0.1.0"
+description = ""
+authors = ["Dmitrii Galkin <galkin.dmitry.485@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.112.2"
+uvicorn = "^0.30.6"
+pydantic = "^2.8.2"
+sqlmodel = "^0.0.21"
+pytest = "^8.3.2"
+aiosqlite = "^0.20.0"
+httpx = "^0.27.2"
+pytest-asyncio = "^0.24.0"
+greenlet = "^3.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
